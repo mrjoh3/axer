@@ -14,6 +14,16 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+
+```{r}
+# add header without content
+htmltools::h2('')
+```
+
+```{r axe}
+
 library(axer)
+
+axer()
+
 ```

@@ -4,7 +4,7 @@
 \alias{axer}
 \title{<Add Title>}
 \usage{
-axer(message, width = NULL, height = NULL, elementId = NULL)
+axer(message, width = NULL, height = NULL, elementId = "axe-results")
 }
 \description{
 <Add Description>

@@ -5,7 +5,7 @@
 #' @import htmlwidgets
 #'
 #' @export
-axer <- function(message, width = NULL, height = NULL, elementId = NULL) {
+axer <- function(message, width = NULL, height = NULL, elementId = 'axe-results') {
 
   # forward options using x
   x = list(
