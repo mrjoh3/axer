@@ -5,7 +5,7 @@
 #' @import htmlwidgets
 #'
 #' @export
-axer <- function(message, width = NULL, height = NULL, elementId = 'axe-results') {
+axer <- function(message, width = '100%', height = NULL, elementId = 'axe-results') {
 
   # forward options using x
   x = list(
@@ -21,6 +21,7 @@ axer <- function(message, width = NULL, height = NULL, elementId = 'axe-results'
     package = 'axer',
     elementId = elementId
   )
+
 }
 
 #' Shiny bindings for axer
