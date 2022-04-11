@@ -4,6 +4,11 @@
 # axer
 
 <!-- badges: start -->
+
+[![Codecov test
+coverage](https://codecov.io/gh/mrjoh3/axer/branch/main/graph/badge.svg)](https://app.codecov.io/gh/mrjoh3/axer?branch=main)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 The goal of axer is to add [axe-core js]() assessment outputs to either
