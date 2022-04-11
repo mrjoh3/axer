@@ -19,14 +19,18 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@v1
 
-      - uses: r-lib/actions/setup-r@v1
-        with:
-          use-public-rspm: true
+      - name: Install curl
+        run: sudo apt-get install libcurl4-openssl-dev curl
 
-      - uses: r-lib/actions/setup-r-dependencies@v1
-        with:
-          extra-packages: pkgdown
-          needs: website
+      - name: Install pkgdown dep
+        run: sudo apt-get install libharfbuzz-dev libfribidi-dev
+
+      - name: Query dependencies
+        run: |
+          install.packages('remotes')
+          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
+          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
+        shell: Rscript {0}
 
       - name: Deploy package
         run: |
