@@ -1,0 +1,5 @@
+dependencies:
+- name: axe-core
+  version: 4.4.1
+  src: htmlwidgets/lib/axe-core
+  script: axe.min.js
